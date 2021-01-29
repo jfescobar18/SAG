@@ -1,0 +1,55 @@
+@media (min-width: 320px) {
+    .carrousel {
+        .chart_div {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .carrousel {
+        .chart_div {
+            height: 180px;
+        }
+    }
+}
+
+@media (min-width: 425px) {
+    .carrousel {
+        .chart_div {
+            height: 220px;
+        }
+    }
+}
+
+@media (min-width: 520px) {
+    .carrousel {
+        .chart_div {
+            height: 250px;
+        }
+    }
+}
+
+@media (min-width: 680px) {
+    .carrousel {
+        .chart_div {
+            height: 300px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .carrousel {
+        .chart_div {
+            height: 350px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .carrousel {
+        .chart_div {
+            height: 400px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import 'variables.scss';
+@import 'navbar.scss';
+@import 'reset.scss';
+@import 'carrousel.scss';
+@import 'charts.scss';
+
+#app {
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 8px;
+    font-weight: bold;
+    color: green;
+}
+
+.home {
+    &>h1 {
+        text-align: center;
+        margin-top: 30px;
+    }
+}

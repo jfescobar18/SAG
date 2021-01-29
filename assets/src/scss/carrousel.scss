@@ -1,0 +1,154 @@
+.carrousel {
+	margin-top: 50px;
+	width: 100%;
+	margin: 0 auto;
+	.container {
+		position: relative;
+		margin: 0 auto;
+		background-color: rgba(32, 47, 86, 0.5);
+		border-radius: 15px;
+		a {
+			position: absolute;
+			text-decoration: none;
+			color: #a9a9a9a9;
+			font-size: 36px;
+			top: 50%;
+			transform: translateY(-50%);
+			&:hover {
+				color: gray;
+			}
+		}
+	}
+	.image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		opacity: 0;
+		img {
+			height: 100%;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.text {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top: 85%;
+		color: white;
+		font-weight: bold;
+	}
+	.next {
+		left: 97%;
+	}
+	.button {
+		position: absolute;
+		top: 5%;
+		left: 95%;
+	}
+	.dots {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+	}
+	.dot {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-color: #cacaca;
+		border-radius: 50%;
+		margin-right: 5px;
+		&:hover {
+			cursor: pointer;
+			background-color: gray;
+		}
+	}
+	.active {
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 1s, opacity 1s;
+	}
+	.active {
+		background-color: gray;
+	}
+}
+
+@media (min-width: 320px) {
+	.carrousel {
+		.container {
+			width: 100%;
+			height: 140px;
+		}
+		.dots {
+			top: 80%;
+		}
+	}
+}
+
+@media (min-width: 375px) {
+	.carrousel {
+		.container {
+			height: 180px;
+		}
+		.dots {
+			top: 86%;
+		}
+	}
+}
+
+@media (min-width: 425px) {
+	.carrousel {
+		.container {
+			height: 220px;
+		}
+	}
+}
+
+@media (min-width: 520px) {
+	.carrousel {
+		.container {
+			height: 250px;
+		}
+	}
+}
+
+@media (min-width: 680px) {
+	.carrousel {
+		.container {
+			height: 300px;
+		}
+		.dots {
+			top: 90%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.carrousel {
+		.container {
+			height: 350px;
+		}
+		.dots {
+			top: 92%;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.carrousel {
+		.container {
+			width: 85%;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.carrousel {
+		.container {
+			width: 70%;
+			height: 400px;
+		}
+	}
+}

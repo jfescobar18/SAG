@@ -1,0 +1,236 @@
+.navbar-img {
+  width: 120px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.carrousel {
+  margin-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+.carrousel .container {
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(32, 47, 86, 0.5);
+  border-radius: 15px;
+}
+.carrousel .container a {
+  position: absolute;
+  text-decoration: none;
+  color: #a9a9a9a9;
+  font-size: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carrousel .container a:hover {
+  color: gray;
+}
+.carrousel .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.carrousel .image img {
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carrousel .text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 85%;
+  color: white;
+  font-weight: bold;
+}
+.carrousel .next {
+  left: 97%;
+}
+.carrousel .button {
+  position: absolute;
+  top: 5%;
+  left: 95%;
+}
+.carrousel .dots {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.carrousel .dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.carrousel .dot:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.carrousel .active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s;
+}
+.carrousel .active {
+  background-color: gray;
+}
+
+@media (min-width: 320px) {
+  .carrousel .container {
+    width: 100%;
+    height: 140px;
+  }
+  .carrousel .dots {
+    top: 80%;
+  }
+}
+@media (min-width: 375px) {
+  .carrousel .container {
+    height: 180px;
+  }
+  .carrousel .dots {
+    top: 86%;
+  }
+}
+@media (min-width: 425px) {
+  .carrousel .container {
+    height: 220px;
+  }
+}
+@media (min-width: 520px) {
+  .carrousel .container {
+    height: 250px;
+  }
+}
+@media (min-width: 680px) {
+  .carrousel .container {
+    height: 300px;
+  }
+  .carrousel .dots {
+    top: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .carrousel .container {
+    height: 350px;
+  }
+  .carrousel .dots {
+    top: 92%;
+  }
+}
+@media (min-width: 1024px) {
+  .carrousel .container {
+    width: 85%;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel .container {
+    width: 70%;
+    height: 400px;
+  }
+}
+@media (min-width: 320px) {
+  .carrousel .chart_div {
+    width: 100%;
+  }
+}
+@media (min-width: 375px) {
+  .carrousel .chart_div {
+    height: 180px;
+  }
+}
+@media (min-width: 425px) {
+  .carrousel .chart_div {
+    height: 220px;
+  }
+}
+@media (min-width: 520px) {
+  .carrousel .chart_div {
+    height: 250px;
+  }
+}
+@media (min-width: 680px) {
+  .carrousel .chart_div {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .carrousel .chart_div {
+    height: 350px;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel .chart_div {
+    height: 400px;
+  }
+}
+#app {
+  padding: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  padding: 8px;
+  font-weight: bold;
+  color: green;
+}
+
+.home > h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=main.min.css.map */
