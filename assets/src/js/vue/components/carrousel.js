@@ -1,6 +1,8 @@
 var carrousel = Vue.component('carrousel', {
     props: {
-
+        carrouselId: {
+            default: ''
+        }
     },
     data() {
         return {
@@ -12,37 +14,37 @@ var carrousel = Vue.component('carrousel', {
     template: `
         <div class="carrousel">
             <div class="container">
-                <div class="image active">
-                    <div class="chart_div"></div>
+                <div v-bind:class="'image image-' + carrouselId + ' active'">
+                    <div v-bind:class="'chart_div chart_div-' + carrouselId"></div>
                 </div>
                 
-                <div class="image">
-                    <div class="chart_div"></div>
+                <div v-bind:class="'image image-' + carrouselId">
+                    <div v-bind:class="'chart_div chart_div-' + carrouselId"></div>
                 </div>
                 
-                <div class="image">
-                    <div class="chart_div"></div>
+                <div v-bind:class="'image image-' + carrouselId">
+                    <div v-bind:class="'chart_div chart_div-' + carrouselId"></div>
                 </div>
                 
-                <div class="image">
-                    <div class="chart_div"></div>
+                <div v-bind:class="'image image-' + carrouselId">
+                    <div v-bind:class="'chart_div chart_div-' + carrouselId"></div>
                 </div>
                 
-                <a href="#" class="prev" v-on:click="prev">&#10094;</a>
-                <a href="#" class="next" v-on:click="next">&#10095;</a>
+                <a href="#" onclick="return false;" class="prev" v-on:click="prev">&#10094;</a>
+                <a href="#" onclick="return false;" class="next" v-on:click="next">&#10095;</a>
                 
                 <div class="dots">
-                    <span class="dot active" v-on:click="show(0)"></span>
-                    <span class="dot" v-on:click="show(1)"></span>
-                    <span class="dot" v-on:click="show(2)"></span>
-                    <span class="dot" v-on:click="show(3)"></span>
+                    <span v-bind:class="'dot dot-' + carrouselId + ' active'" v-on:click="show(0)"></span>
+                    <span v-bind:class="'dot dot-' + carrouselId" v-on:click="show(1)"></span>
+                    <span v-bind:class="'dot dot-' + carrouselId" v-on:click="show(2)"></span>
+                    <span v-bind:class="'dot dot-' + carrouselId" v-on:click="show(3)"></span>
                 </div>
             </div>
         </div>
     `,
     methods: {
         dots: function (n) {
-            var ptn = document.getElementsByClassName("dot");
+            var ptn = document.getElementsByClassName(`dot-${this.carrouselId}`);
             for (let i = 0; i < ptn.length; i++) {
                 if (ptn[i].className.includes("active")) {
                     ptn[i].className = ptn[i].className.replace("active", "");
@@ -52,7 +54,7 @@ var carrousel = Vue.component('carrousel', {
             ptn[n].className += " active";
         },
         show: function (n) {
-            var imagenes = document.getElementsByClassName("image");
+            var imagenes = document.getElementsByClassName(`image-${this.carrouselId}`);
             for (let i = 0; i < imagenes.length; i++) {
                 if (imagenes[i].className.includes("active")) {
                     imagenes[i].className = imagenes[i].className.replace("active", "");
@@ -81,6 +83,8 @@ var carrousel = Vue.component('carrousel', {
             google.charts.load('current', { 'packages': ['corechart'] });
             google.charts.setOnLoadCallback(drawVisualization);
 
+            const context = this;
+
             function drawVisualization() {
                 var data = google.visualization.arrayToDataTable([
                     ["SAG", "()", "% TARGET"],
@@ -98,7 +102,7 @@ var carrousel = Vue.component('carrousel', {
                     ["DIC", 0, 10],
                     ["2019", 14.45, 10]
                 ]);
-                
+
                 var _data = google.visualization.arrayToDataTable([
                     ["SAG", "()", "% TARGET"],
                     ["ENE", 7, 5],
@@ -123,7 +127,7 @@ var carrousel = Vue.component('carrousel', {
                     seriesType: 'bars',
                     series: { 1: { type: 'line' } }
                 };
-                
+
                 var _options = {
                     title: 'MTBF LINEA 3',
                     vAxis: { title: '' },
@@ -132,24 +136,23 @@ var carrousel = Vue.component('carrousel', {
                     series: { 1: { type: 'line' } }
                 };
 
-                let chart_divs = document.getElementsByClassName('chart_div');
-                console.log(chart_divs);
+                let chart_divs = document.getElementsByClassName(`chart_div-${context.carrouselId}`);
 
                 var chart1 = new google.visualization.ComboChart(chart_divs[0]);
                 chart1.draw(data, options);
-                
+
                 var chart2 = new google.visualization.ComboChart(chart_divs[1]);
                 chart2.draw(_data, _options);
-                
+
                 var chart3 = new google.visualization.ComboChart(chart_divs[2]);
                 chart3.draw(data, options);
-                
+
                 var chart4 = new google.visualization.ComboChart(chart_divs[3]);
                 chart4.draw(_data, _options);
             }
         }
     },
-    mounted() {
+    updated() {
         this.play = setInterval(this.next(), this.speed);
         this.initChart();
     }
