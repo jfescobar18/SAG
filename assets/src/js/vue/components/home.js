@@ -1,6 +1,6 @@
 var home = Vue.component('home', {
     props: {
-
+        
     },
     data() {
         return {
