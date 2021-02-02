@@ -1,13 +1,9 @@
 var jsonChart = [
     {
-        options: {
-            title: 'MTBF LINEA 2',
-            vAxis: { title: '' },
-            hAxis: { title: '' },
-            seriesType: 'bars',
-            series: { 1: { type: 'line' } }
+        "options": {
+            "title": "MTBF LINEA 2"
         },
-        data: [
+        "data": [
             ["SAG", "()", "% TARGET"],
             ["ENE", 14.45, 10],
             ["FEB", 0, 10],
@@ -23,17 +19,13 @@ var jsonChart = [
             ["DIC", 0, 10],
             ["2019", 14.45, 10]
         ],
-        activeClass: " active"
+        "activeClass": " active"
     },
     {
-        options: {
-            title: 'MTBF LINEA 3',
-            vAxis: { title: '' },
-            hAxis: { title: '' },
-            seriesType: 'bars',
-            series: { 1: { type: 'line' } }
+        "options": {
+            "title": "MTBF LINEA 3"
         },
-        data: [
+        "data": [
             ["SAG", "()", "% TARGET"],
             ["ENE", 7, 5],
             ["FEB", 0, 5],
@@ -49,6 +41,6 @@ var jsonChart = [
             ["DIC", 0, 10],
             ["2019", 7, 5]
         ],
-        activeClass: ""
+        "activeClass": ""
     }
 ];
