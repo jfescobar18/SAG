@@ -9,8 +9,8 @@ var home = Vue.component('home', {
             <h1>Monterrey</h1>
             <carrousel></carrousel>
             
-            <h1>Tlalnepantla</h1>
-            <carrousel></carrousel>
+            <!-- h1>Tlalnepantla</h1>
+            <carrousel></carrousel -->
         </div>
     `,
     methods: {
