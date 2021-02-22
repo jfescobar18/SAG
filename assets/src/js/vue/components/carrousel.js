@@ -4,7 +4,7 @@ var carrousel = Vue.component('carrousel', {
             default: ''
         },
         jsonChart: {
-            default: []
+            default: [{}]
         }
     },
     data() {
@@ -79,6 +79,12 @@ var carrousel = Vue.component('carrousel', {
                 for (let i = 0; i < context.jsonChart.length; i++) {
                     var data = google.visualization.arrayToDataTable(context.jsonChart[i].data);
                     var chart = new google.visualization.ComboChart(chart_divs[i]);
+
+                    context.jsonChart[i].options.vAxis = { title: "" };
+                    context.jsonChart[i].options.hAxis = { title: "" };
+                    context.jsonChart[i].options.seriesType = "bars";
+                    context.jsonChart[i].options.series = { 1: { type: "line" } };
+                    
                     chart.draw(data, context.jsonChart[i].options);
                 }
             }
