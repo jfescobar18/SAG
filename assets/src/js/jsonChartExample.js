@@ -3,7 +3,7 @@ var jsonChart = [
         "options": {
             "title": "MTBF LINEA 2"
         },
-        "data": [
+        "graph": [
             ["SAG", "()", "% TARGET"],
             ["ENE", 14.45, 10],
             ["FEB", 0, 10],
@@ -19,13 +19,41 @@ var jsonChart = [
             ["DIC", 0, 10],
             ["2019", 14.45, 10]
         ],
+        "table": [
+            {
+                "item": 1,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            },
+            {
+                "item": 2,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            },
+            {
+                "item": 3,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            }
+        ],
+        "responsible": "",
+        "sub-title": "",
         "activeClass": " active"
     },
     {
         "options": {
             "title": "MTBF LINEA 3"
         },
-        "data": [
+        "graph": [
             ["SAG", "()", "% TARGET"],
             ["ENE", 7, 5],
             ["FEB", 0, 5],
@@ -41,6 +69,35 @@ var jsonChart = [
             ["DIC", 0, 10],
             ["2019", 7, 5]
         ],
+        "table": [
+            {
+                "item": 1,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            },
+            {
+                "item": 2,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            },
+            {
+                "item": 3,
+                "problemDesc": "",
+                "action": "",
+                "responsible": "",
+                "date": "dd/mm/yyyy",
+                "progress": "0%"
+            }
+               
+        ],
+        "responsible": "",
+        "sub-title": "",
         "activeClass": ""
     }
 ];

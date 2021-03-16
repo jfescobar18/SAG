@@ -18,6 +18,16 @@
 				color: gray;
 			}
 		}
+		.graph-footer {
+			background-color: #ffffff;
+			p {
+				text-align: right;
+			}
+			small {
+				text-align: center;
+				display: block;
+			}
+		}
 	}
 	.image {
 		position: absolute;
@@ -82,7 +92,7 @@
 			height: 140px;
 		}
 		.dots {
-			top: 80%;
+			top: 135%;
 		}
 	}
 }
@@ -90,10 +100,10 @@
 @media (min-width: 375px) {
 	.carrousel {
 		.container {
-			height: 180px;
+			height: 380px;
 		}
 		.dots {
-			top: 86%;
+			top: 47%;
 		}
 	}
 }
@@ -101,7 +111,7 @@
 @media (min-width: 425px) {
 	.carrousel {
 		.container {
-			height: 220px;
+			height: 420px;
 		}
 	}
 }
@@ -109,7 +119,7 @@
 @media (min-width: 520px) {
 	.carrousel {
 		.container {
-			height: 250px;
+			height: 450px;
 		}
 	}
 }
@@ -117,10 +127,10 @@
 @media (min-width: 680px) {
 	.carrousel {
 		.container {
-			height: 300px;
+			height: 500px;
 		}
 		.dots {
-			top: 90%;
+			top: 56%;
 		}
 	}
 }
@@ -128,10 +138,10 @@
 @media (min-width: 768px) {
 	.carrousel {
 		.container {
-			height: 350px;
+			height: 550px;
 		}
 		.dots {
-			top: 92%;
+			top: 60%;
 		}
 	}
 }
@@ -148,7 +158,7 @@
 	.carrousel {
 		.container {
 			width: 70%;
-			height: 400px;
+			height: 600px;
 		}
 	}
 }

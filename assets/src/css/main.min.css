@@ -1,1 +1,310 @@
-.navbar-img{width:120px}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.carrousel{margin-top:50px;width:100%;margin:0 auto}.carrousel .container{position:relative;margin:0 auto;background-color:rgba(32,47,86,0.5);border-radius:15px}.carrousel .container a{position:absolute;text-decoration:none;color:#a9a9a9a9;font-size:36px;top:50%;transform:translateY(-50%)}.carrousel .container a:hover{color:gray}.carrousel .image{position:absolute;width:100%;height:100%;visibility:hidden;opacity:0}.carrousel .image img{height:100%;position:relative;left:50%;transform:translateX(-50%)}.carrousel .text{position:absolute;width:100%;text-align:center;top:85%;color:white;font-weight:bold}.carrousel .next{left:97%}.carrousel .button{position:absolute;top:5%;left:95%}.carrousel .dots{position:absolute;width:100%;text-align:center}.carrousel .dot{display:inline-block;width:16px;height:16px;background-color:#cacaca;border-radius:50%;margin-right:5px}.carrousel .dot:hover{cursor:pointer;background-color:gray}.carrousel .active{visibility:visible;opacity:1;transition:visibility 1s,opacity 1s}.carrousel .active{background-color:gray}@media (min-width:320px){.carrousel .container{width:100%;height:140px}.carrousel .dots{top:80%}}@media (min-width:375px){.carrousel .container{height:180px}.carrousel .dots{top:86%}}@media (min-width:425px){.carrousel .container{height:220px}}@media (min-width:520px){.carrousel .container{height:250px}}@media (min-width:680px){.carrousel .container{height:300px}.carrousel .dots{top:90%}}@media (min-width:768px){.carrousel .container{height:350px}.carrousel .dots{top:92%}}@media (min-width:1024px){.carrousel .container{width:85%}}@media (min-width:1440px){.carrousel .container{width:70%;height:400px}}@media (min-width:320px){.carrousel .chart_div{width:100%}}@media (min-width:375px){.carrousel .chart_div{height:180px}}@media (min-width:425px){.carrousel .chart_div{height:220px}}@media (min-width:520px){.carrousel .chart_div{height:250px}}@media (min-width:680px){.carrousel .chart_div{height:300px}}@media (min-width:768px){.carrousel .chart_div{height:350px}}@media (min-width:1440px){.carrousel .chart_div{height:400px}}#app{padding:16px;font-family:"Roboto",sans-serif}h1{font-size:28px;padding:8px;font-weight:bold}.home>h1{text-align:center;margin-top:30px}
+.navbar-img {
+  width: 120px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.carrousel {
+  margin-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+.carrousel .container {
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(32, 47, 86, 0.5);
+  border-radius: 15px;
+}
+.carrousel .container a {
+  position: absolute;
+  text-decoration: none;
+  color: #a9a9a9a9;
+  font-size: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carrousel .container a:hover {
+  color: gray;
+}
+.carrousel .container .graph-footer {
+  background-color: #ffffff;
+}
+.carrousel .container .graph-footer p {
+  text-align: right;
+}
+.carrousel .container .graph-footer small {
+  text-align: center;
+  display: block;
+}
+.carrousel .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.carrousel .image img {
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carrousel .text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 85%;
+  color: white;
+  font-weight: bold;
+}
+.carrousel .next {
+  left: 97%;
+}
+.carrousel .button {
+  position: absolute;
+  top: 5%;
+  left: 95%;
+}
+.carrousel .dots {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.carrousel .dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #cacaca;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.carrousel .dot:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.carrousel .active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s;
+}
+.carrousel .active {
+  background-color: gray;
+}
+
+@media (min-width: 320px) {
+  .carrousel .container {
+    width: 100%;
+    height: 140px;
+  }
+  .carrousel .dots {
+    top: 135%;
+  }
+}
+@media (min-width: 375px) {
+  .carrousel .container {
+    height: 380px;
+  }
+  .carrousel .dots {
+    top: 47%;
+  }
+}
+@media (min-width: 425px) {
+  .carrousel .container {
+    height: 420px;
+  }
+}
+@media (min-width: 520px) {
+  .carrousel .container {
+    height: 450px;
+  }
+}
+@media (min-width: 680px) {
+  .carrousel .container {
+    height: 500px;
+  }
+  .carrousel .dots {
+    top: 56%;
+  }
+}
+@media (min-width: 768px) {
+  .carrousel .container {
+    height: 550px;
+  }
+  .carrousel .dots {
+    top: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .carrousel .container {
+    width: 85%;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel .container {
+    width: 70%;
+    height: 600px;
+  }
+}
+@media (min-width: 320px) {
+  .carrousel .chart_div {
+    width: 100%;
+  }
+}
+@media (min-width: 375px) {
+  .carrousel .chart_div {
+    height: 180px;
+  }
+}
+@media (min-width: 425px) {
+  .carrousel .chart_div {
+    height: 220px;
+  }
+}
+@media (min-width: 520px) {
+  .carrousel .chart_div {
+    height: 250px;
+  }
+}
+@media (min-width: 680px) {
+  .carrousel .chart_div {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .carrousel .chart_div {
+    height: 350px;
+  }
+}
+@media (min-width: 1440px) {
+  .carrousel .chart_div {
+    height: 400px;
+  }
+}
+.carrousel table {
+  font-family: arial;
+  max-width: 100%;
+  max-height: 150px;
+  min-height: 150px;
+  overflow-y: scroll;
+  display: block;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
+}
+.carrousel .table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carrousel .table th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 8px 15px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+}
+.carrousel .table td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 8px 15px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+}
+.carrousel .table thead th {
+  background: #eeeeee;
+  vertical-align: bottom;
+}
+.carrousel .table tbody > tr:nth-child(odd) > td {
+  background-color: #fafafa;
+}
+.carrousel .table tbody > tr:nth-child(odd) > th {
+  background-color: #fafafa;
+}
+.carrousel .table .t-small {
+  width: 5%;
+}
+.carrousel .table .t-medium {
+  width: 15%;
+}
+@media (max-width: 480px) {
+  .carrousel .table-action thead {
+    display: none;
+  }
+  .carrousel .table-action tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .carrousel .table-action td {
+    border: 0;
+  }
+  .carrousel .table-action td:not(:first-child) {
+    display: block;
+  }
+}
+
+#app {
+  padding: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.home > h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=main.min.css.map */

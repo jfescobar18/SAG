@@ -5,7 +5,7 @@ var home = Vue.component('home', {
     data() {
         return {
             Ids: [],
-            ChartsMonterrey: [{}],
+            ChartsMonterrey: jsonChart,
             ChartsTlalnepantla: [{}]
         };
     },
