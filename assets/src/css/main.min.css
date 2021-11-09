@@ -275,7 +275,7 @@ table {
   width: 5%;
 }
 .carrousel .table .t-medium {
-  width: 15%;
+  width: 8%;
 }
 @media (max-width: 480px) {
   .carrousel .table-action thead {

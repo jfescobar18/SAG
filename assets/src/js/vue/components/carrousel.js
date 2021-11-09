@@ -21,22 +21,12 @@ var carrousel = Vue.component('carrousel', {
                     <table class="table table-action">
                         <thead>
                             <tr>
-                            <th class="t-small">ITEM</th>
-                            <th class="t-medium">DESCRIPCION DEL PROBLEMA</th>
-                            <th class="t-medium">ACCION CORRECTIVA</th>
-                            <th class="t-medium">RESPONSABLE</th>
-                            <th class="t-small">FECHA</th>
-                            <th class="t-small">PROGRESO</th>
+                                <th class="t-medium" v-for="header in chart.table.Headers">{{ header }}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="row in chart.table">
-                                <td>{{ row.item }}</td>
-                                <td>{{ row.problemDesc }}</td>
-                                <td>{{ row.action }}</td>
-                                <td>{{ row.responsible }}</td>
-                                <td>{{ row.date }}</td>
-                                <td>{{ row.progress }}</td>
+                            <tr v-for="row in chart.table.Data">
+                                <td v-for="reg in row">{{ reg }}</td>
                             </tr>
                         </tbody>
                     </table>
